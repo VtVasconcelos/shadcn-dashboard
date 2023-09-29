@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@radix-ui/react-hover-card";
 import { Separator } from "@radix-ui/react-menubar";
 import { ScrollArea, ScrollAreaCorner, ScrollAreaScrollbar } from "@radix-ui/react-scroll-area";
+import uuid from 'react-uuid';
 
 interface IRow {
     name: string,
@@ -116,7 +117,7 @@ export function Recents() {
         <div className="">
             <div className="">
                 <ScrollArea className="overflow-hidden overflow-y-auto rounded-md flex flex-col space-y-4 max-h-56 px-4 py-4">
-                    {mockSales.map(row => (<><Row {...row} /><hr /></>))}
+                    {mockSales.map(row => (<div key={uuid()}><Row {...row} /><hr /></div>))}
                 </ScrollArea>
             </div>
         </div>
