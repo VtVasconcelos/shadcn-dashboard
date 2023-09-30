@@ -68,7 +68,7 @@ const mockSales = [
 function Row({ name, email, value }: IRow) {
     return (
         <div className="flex">
-            <Avatar className="h-9 w-9">
+            <Avatar className="h-11 w-9">
                 <AvatarImage src="https://github.com/vtVasconcelos.png" className="rounded-full" alt={name} />
                 <AvatarFallback>{name.split(' ')[0].slice(0, 2)}</AvatarFallback>
             </Avatar>
@@ -83,7 +83,7 @@ function Row({ name, email, value }: IRow) {
                             </p>
                         </>
                     </HoverCardTrigger>
-                    <HoverCardContent className="w-80 bg-zinc-900 rounded p-4 border">
+                    <HoverCardContent className="w-80 bg-popover rounded p-4 border">
                         <div className="flex justify-between space-x-4">
                             <Avatar>
                                 <AvatarImage src="https://github.com/vtVasconcelos.png" className="rounded-full my-3" />
@@ -116,7 +116,7 @@ export function Recents() {
     return (
         <div className="">
             <div className="">
-                <ScrollArea className="overflow-hidden overflow-y-auto rounded-md flex flex-col space-y-4 max-h-56 px-4 py-4">
+                <ScrollArea className="overflow-hidden overflow-y-auto rounded-md flex flex-col space-y-4 max-h-64 px-4 py-4">
                     {mockSales.map(row => (<div key={uuid()}><Row {...row} /><hr /></div>))}
                 </ScrollArea>
             </div>

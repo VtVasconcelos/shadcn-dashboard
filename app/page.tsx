@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="min-h-full min-w-full">
+    <main className="min-h-full min-w-full container">
       <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>Inicio</h1>
       <Cards />
       <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-2'>
