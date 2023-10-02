@@ -20,8 +20,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
           disableTransitionOnChange
         >
           <div className='flex-1'>
