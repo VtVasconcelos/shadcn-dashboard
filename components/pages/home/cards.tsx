@@ -1,12 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import CardWithGraph from "./cardWithGraph";
 
 export default function Cards() {
     return (
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 my-4">
-            <Card>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 my-4 items-center cursor-default">
+            <Card className="h-full bg-primary text-white hover:scale-105 transition-all">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
-                    Receita Total
+                        Receita Total
                     </CardTitle>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -16,19 +17,19 @@ export default function Cards() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        className="h-4 w-4 text-muted-foreground"
+                        className="h-4 w-4 text-white"
                     >
                         <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                     </svg>
                 </CardHeader>
                 <CardContent>
                     <div className="text-2xl font-bold">$450,00</div>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-white">
                         +20.1% desde o último mês
                     </p>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="h-full hover:scale-105 transition-all">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
                         Cadastros
@@ -51,11 +52,11 @@ export default function Cards() {
                 <CardContent>
                     <div className="text-2xl font-bold">+10</div>
                     <p className="text-xs text-muted-foreground">
-                    +20.1% desde o último mês
+                        +20.1% desde o último mês
                     </p>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="h-full hover:scale-105 transition-all">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Vendas</CardTitle>
                     <svg
@@ -75,11 +76,11 @@ export default function Cards() {
                 <CardContent>
                     <div className="text-2xl font-bold">+10</div>
                     <p className="text-xs text-muted-foreground">
-                    +20.1% desde o último mês
+                        +20.1% desde o último mês
                     </p>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="h-full hover:scale-105 transition-all">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
                         Ativos agora
