@@ -17,7 +17,7 @@ export default function Menu({...props}) {
                 <NavigationMenuItem>
 
                     <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
-                        Sobre
+                        Vendas
                     </NavigationMenuLink>
 
                 </NavigationMenuItem>
